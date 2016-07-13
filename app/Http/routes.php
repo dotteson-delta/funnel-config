@@ -13,9 +13,18 @@
 /*
 Route::get('/', 'PagesController@home');
 Route::get('about', 'PagesController@about');
-*/
-
 Route::get('cards', 'CardsController@index');
+*/
+//test routes
+Route::get('pages/about', 'PagesController@about');
+
+
+// login/register routes
+Route::get('auth/login', 'Auth\AuthController@getLogin');
+Route::post('auth/login', 'Auth\AuthController@postLogin');
+Route::get('auth/logout', 'Auth\AuthController@getLogout');
+
+
 
 
 
